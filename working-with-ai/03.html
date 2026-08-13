@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>03 &middot; Four Levels of Working With AI - Working With AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Comfortaa:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg" data-mode="subdivision"></canvas>
+<div class="grain"></div>
+
+<button class="sidebar-toggle" aria-label="Open contents" aria-expanded="true" aria-controls="sidebar">
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path d="M4 7h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M4 12h11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M4 17h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+</svg>
+</button>
+<div class="sidebar-backdrop"></div>
+<aside class="sidebar open" id="sidebar">
+  <div class="sidebar-head">
+    <span class="sidebar-title">Contents</span>
+    <button class="sidebar-close" aria-label="Close contents">&times;</button>
+  </div>
+  <ol class="sidebar-list">
+    <li><a href="01.html">
+      <span class="num">01</span>
+      <span class="title">Working With AI Is Not Just Prompting</span>
+    </a></li><li><a href="02.html">
+      <span class="num">02</span>
+      <span class="title">The Core Rule</span>
+    </a></li><li class="current"><a href="03.html">
+      <span class="num">03</span>
+      <span class="title">Four Levels of Working With AI</span>
+    </a></li><li><a href="04.html">
+      <span class="num">04</span>
+      <span class="title">Give AI a Task, Not Just a Topic</span>
+    </a></li><li><a href="05.html">
+      <span class="num">05</span>
+      <span class="title">Context Changes the Answer</span>
+    </a></li><li><a href="06.html">
+      <span class="num">06</span>
+      <span class="title">Your Own Knowledge Matters</span>
+    </a></li><li><a href="07.html">
+      <span class="num">07</span>
+      <span class="title">Articulation Is a Force Multiplier</span>
+    </a></li><li><a href="08.html">
+      <span class="num">08</span>
+      <span class="title">Ask the AI to Ask You Questions</span>
+    </a></li><li><a href="09.html">
+      <span class="num">09</span>
+      <span class="title">Prompting Can Clarify Your Own Thinking</span>
+    </a></li><li><a href="10.html">
+      <span class="num">10</span>
+      <span class="title">Control the Level of Abstraction</span>
+    </a></li><li><a href="11.html">
+      <span class="num">11</span>
+      <span class="title">Give AI Material to Work With</span>
+    </a></li><li><a href="12.html">
+      <span class="num">12</span>
+      <span class="title">Define What “Good” Means</span>
+    </a></li><li><a href="13.html">
+      <span class="num">13</span>
+      <span class="title">Separate Generation From Evaluation</span>
+    </a></li><li><a href="14.html">
+      <span class="num">14</span>
+      <span class="title">Iteration Is the Method</span>
+    </a></li><li><a href="15.html">
+      <span class="num">15</span>
+      <span class="title">Do Not Confuse Confidence With Correctness</span>
+    </a></li><li><a href="16.html">
+      <span class="num">16</span>
+      <span class="title">The Four Things You Bring to the Conversation</span>
+    </a></li>
+  </ol>
+</aside>
+
+<main class="page is-tall">
+  <div class="stamp-number">03</div>
+  <div class="content">
+    <div class="eyebrow">Principle 03</div>
+    <h1>Four Levels of Working With AI</h1>
+    <p class="lede">Working with AI deepens across four levels - each one asking more of you, and giving more back.</p>
+    <ol class="levels"><li><span class="num">1</span><span class="lvl-body"><span class="lvl-title">Instruction</span><span class="lvl-desc">- “Do this.”</span></span></li><li><span class="num">2</span><span class="lvl-body"><span class="lvl-title">Specification</span><span class="lvl-desc">- “Do this under these conditions.”</span></span></li><li><span class="num">3</span><span class="lvl-body"><span class="lvl-title">Collaboration</span><span class="lvl-desc">- “Help me explore, challenge and refine.”</span></span></li><li><span class="num">4</span><span class="lvl-body"><span class="lvl-title">Workflow</span><span class="lvl-desc">- “Use AI across research, generation, critique, verification and communication.”</span></span></li></ol>
+  </div>
+</main>
+
+<svg class="enso" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path d="M 268.0 118.4 Q 268.6 123.6 271.7 128.4 Q 270.2 133.9 272.6 139.0 Q 272.1 144.3 270.8 149.5 Q 272.3 154.8 269.8 159.9 Q 270.5 165.2 267.9 170.0 Q 266.6 175.0 266.2 180.2 Q 265.9 185.5 261.1 189.3 Q 259.1 194.0 258.1 199.1 Q 256.5 204.0 252.3 207.6 Q 248.7 211.2 247.5 216.4 Q 241.1 218.0 240.3 223.7 Q 235.0 225.7 231.0 228.6 Q 227.2 231.7 223.9 235.2 Q 221.3 239.8 215.8 240.5 Q 212.6 244.5 208.6 247.3 Q 203.9 248.8 199.9 251.7 Q 194.8 252.1 190.4 254.1 Q 186.2 256.5 182.2 260.1 Q 177.2 260.7 172.4 261.7 Q 167.9 264.1 162.9 264.7 Q 158.0 265.1 153.1 267.8 Q 148.0 268.0 143.0 266.5 Q 137.8 268.0 132.7 267.7 Q 127.3 268.8 122.2 267.6 Q 117.5 265.1 111.6 266.7 Q 107.7 262.1 102.3 261.7 Q 96.8 261.0 93.1 256.8 Q 87.7 255.6 84.1 251.5 Q 78.3 250.7 73.7 247.9 Q 70.1 243.9 65.4 241.2 Q 63.2 235.8 58.6 232.9 Q 55.6 228.5 52.6 224.1 Q 50.2 219.4 46.4 215.6 Q 43.7 211.1 43.2 205.4 Q 40.7 200.9 41.4 195.0 Q 37.6 191.0 36.7 185.9 Q 34.5 181.2 34.5 175.9 Q 36.1 170.4 35.5 165.5 Q 34.3 160.6 37.0 155.5 Q 35.5 150.6 37.2 145.8 Q 38.0 141.0 39.0 136.2 Q 37.1 131.0 40.7 126.8 Q 41.5 122.0 42.3 117.2 Q 42.0 112.0 46.6 108.5 Q 47.0 103.5 48.6 98.8 Q 49.5 93.7 52.0 89.4 Q 54.2 85.0 58.7 82.1 Q 60.9 77.6 63.9 73.7 Q 65.4 68.2 68.4 64.0 Q 74.0 62.6 77.4 58.9 Q 80.9 55.3 84.7 51.9 Q 88.2 47.9 92.2 44.5 Q 97.1 42.8 102.0 41.2 Q 106.0 37.2 110.8 35.3 Q 115.5 32.6 120.1 29.4 Q 125.5 29.1 130.8 28.6 Q 136.0 27.4 141.2 26.6 Q 146.6 28.8 151.9 25.5 Q 157.2 26.3 162.5 26.5 Q 167.7 27.7 172.6 30.5 Q 177.7 31.9 182.3 34.7 Q 187.7 34.6 191.7 38.9 Q 196.2 41.3 200.9 43.3 Q 205.1 46.3 209.6 48.6 Q 212.9 52.7 216.6 56.1 Q 220.6 59.0 224.0 62.7 Q 228.1 65.6 230.3 70.3 Q 235.9 71.8 238.0 76.5 Q 239.4 81.7 242.3 85.5 Q 245.1 89.5 247.5 93.7 " stroke-width="5" opacity="0.9"/>
+  <path d="M 271.2 123.9 Q 274.0 128.8 275.2 134.1 Q 274.5 139.6 274.8 144.9 Q 273.9 150.3 273.7 155.6 Q 273.8 160.9 272.8 166.1 Q 273.1 171.6 270.3 176.4 Q 268.5 181.4 268.9 187.0 Q 265.9 191.6 262.9 196.1 Q 261.4 201.1 257.7 205.1 Q 256.0 210.1 254.0 215.0 Q 250.6 219.0 247.0 222.8 Q 242.7 226.1 239.4 229.9 Q 235.4 233.2 232.6 237.6 Q 228.2 240.5 224.5 244.1 Q 219.7 246.2 215.3 248.8 Q 211.7 252.6 207.5 255.5 Q 202.8 257.6 198.1 259.7 Q 193.4 261.8 188.5 263.4 Q 183.4 264.0 178.7 266.1 Q 173.6 267.1 168.5 267.4 Q 163.5 268.4 158.5 269.7 Q 153.4 270.3 148.2 271.6 Q 142.9 272.4 137.8 271.1 Q 132.4 272.0 127.1 271.6 Q 121.9 270.7 117.0 268.3 Q 112.0 266.8 107.0 265.3 Q 102.0 263.6 97.1 261.6 Q 91.8 260.3 86.7 258.5 Q 82.1 255.7 78.1 252.0 Q 73.5 249.3 69.1 246.2 Q 66.2 241.4 61.4 238.7 Q 57.3 235.1 54.1 230.8 Q 50.9 226.5 48.4 221.7 Q 46.2 216.8 42.4 212.9 Q 41.0 207.6 37.9 203.2 Q 35.6 198.4 35.2 192.9 Q 33.8 187.9 31.3 183.1 Q 30.9 177.8 31.4 172.4 Q 31.0 167.2 30.6 162.1 Q 28.7 157.1 29.0 151.9 Q 30.9 146.7 29.8 141.5 Q 30.1 136.4 31.7 131.4 Q 33.5 126.5 34.2 121.5 Q 36.6 116.9 38.4 112.1 Q 38.0 106.6 40.6 102.1 Q 43.0 97.6 44.3 92.5 Q 47.8 88.6 49.5 83.6 Q 52.3 79.3 56.4 76.0 Q 59.4 71.8 62.5 67.7 Q 66.0 63.9 69.0 59.5 Q 73.3 56.5 76.9 52.7 Q 81.3 50.0 84.5 45.3 Q 89.5 43.5 93.9 40.5 Q 98.4 37.6 102.8 34.5 Q 108.1 33.5 112.7 30.4 Q 118.1 29.7 123.2 28.2 Q 128.4 27.0 133.8 27.3 Q 139.0 25.7 144.4 25.9 Q 149.7 26.2 155.0 24.4 Q 160.3 26.3 165.6 26.3 Q 171.0 26.6 176.1 28.2 Q 181.1 30.2 186.3 31.4 Q 191.3 33.2 196.3 34.9 Q 200.4 38.7 205.5 40.3 Q 209.6 43.7 213.9 46.6 Q 218.8 48.7 222.5 52.5 Q 226.5 55.8 230.5 59.1 Q 234.4 62.6 237.0 67.2 Q 240.6 70.9 243.5 75.2 Q 246.5 79.4 249.6 83.4 Q 251.8 88.1 254.4 92.5 " stroke-width="2.2" opacity="0.5"/>
+</svg>
+<nav class="sitenav">
+      <a class="prev" href="02.html"><span class="arrow">&larr;</span><span class="label">The Core Rule</span></a>
+      <div class="nav-center">
+        <a class="index-link" href="../index.html"><svg class="mark" width="13" height="13" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 4 Q12 1 20 4 L20 20 Q12 17 4 20 Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><line x1="12" y1="2.6" x2="12" y2="18.6" stroke="currentColor" stroke-width="1.2"/></svg> Home <span class="counter">03 / 16</span></a>
+        <div class="nav-credit">Jesal Mehta</div>
+      </div>
+      <a class="next" href="04.html"><span class="label">Give AI a Task, Not Just a Topic</span><span class="arrow">&rarr;</span></a>
+    </nav>
+
+<script src="background.js"></script>
+<script src="sidebar.js"></script>
+</body>
+</html>
