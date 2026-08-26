@@ -697,7 +697,16 @@ html.sidebar-open .sidebar{ transform: translateX(0); }
   padding: 16vh 9vw 4vh;
   max-width: 900px;
 }
-.hero .eyebrow{ margin-bottom:1.6rem; }
+.hero-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1.5rem;
+  flex-wrap:wrap;
+  margin-bottom:1.6rem;
+}
+.hero-top .eyebrow{ margin-bottom:0; }
+.hero-top .cross-link{ margin-top:0; }
 .hero h1{
   max-width: 16ch;
   font-size: clamp(2.4rem, 6vw, 4.2rem);
