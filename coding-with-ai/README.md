@@ -32,7 +32,9 @@ background.js        Generative canvas background — one effect per page, not c
 sidebar.js           Contents drawer: push-layout on desktop, overlay on mobile
 connectors.js        Draws the bezier connector diagram on page 16 (positions computed
                       live from the DOM, redrawn on resize and on sidebar toggle)
-enso.svg.txt         Pre-generated ink-circle (ensō) SVG markup shared by every page
+motif.js              Live spirograph (hypotrochoid) drawn on <canvas>, shared by every
+                      page — rolling-circle radius and pen offset ease toward cursor/
+                      touch position, frozen to one shape under prefers-reduced-motion
 ```
 
 ## The 6 groups (15 principles)
@@ -51,13 +53,15 @@ enso.svg.txt         Pre-generated ink-circle (ensō) SVG markup shared by every
   via `<link rel="preconnect">` + stylesheet (not a CSS `@import`, which blocks first paint).
 - **Palette** — cyan/lavender/blue-violet pastel wash (`.bg-wash`, a `position:fixed` div
   behind the canvas, sized in viewport units so it doesn't fall short on long pages) with
-  neon magenta (`--seal`), cyan (`--neon-cyan`), violet (`--violet`) and electric blue
+  brick red (`--seal`), cyan (`--neon-cyan`), violet (`--violet`) and electric blue
   (`--accent-blue`) accents.
 - **Generative backgrounds** — three effects (`bounce`, `flowfield`, `subdivision`), assigned
   one per page via `data-mode` on `<canvas id="bg">` and never cycling at runtime. All three
   render as semi-transparent ink strokes so the pastel wash stays visible underneath.
-- **Ensō** — a hand-generated ink-circle SVG in the lower-right corner of every page, subtly
-  breathing via CSS animation.
+- **Corner motif** — a live spirograph (hypotrochoid) drawn on `<canvas>` in the lower-right
+  corner of every page (`motif.js`), replacing an earlier static hand-drawn ensō SVG. The
+  rolling-circle radius tracks cursor/touch X, the pen offset tracks Y, both eased rather than
+  snapped; freezes to one default shape under `prefers-reduced-motion`.
 - **Sidebar** — lists all 15 principles grouped by theme, current page highlighted. Defaults
   open and pushes page content aside on desktop (≥861px); collapses to an overlay drawer with
   a dimming backdrop under 861px, default closed there. The open/closed state lives as a single

@@ -7,7 +7,7 @@
   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   var INK = '42,35,97';   // matches --ink
-  var SEAL = '194,31,214'; // matches --seal, used sparingly for neon glints
+  var SEAL = '178,58,46'; // matches --seal, used sparingly for neon glints
 
   var MODE = canvas.getAttribute('data-mode') || 'bounce';
 

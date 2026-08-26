@@ -38,6 +38,20 @@ close-paraphrase from that session.
   constantly reshuffling; subdivision's recursion depth raised (6→10) and its per-level
   stop-probability lowered (0.22→0.16→ multiple passes) so large panels keep splitting at the
   early levels instead of stopping while still big.
+- **Accent recolor** (2026-08-27): `--seal` shifted from neon magenta (`#C21FD6`) to a muted
+  brick red (`#B23A2E`) across both sites — the magenta/violet combination wasn't reading well
+  against the cool cyan/violet backdrop. Changed everywhere the hex was duplicated outside the
+  CSS variable: `background.js`'s hardcoded `SEAL` rgb constant (neon-glint accents), both
+  sites' ambient wash gradients, and the slide-16 "Define" category swatch in
+  `coding-with-ai/16.html`.
+- **Corner motif replaced** (2026-08-27): the static, hand-authored ensō SVG (duplicated
+  byte-for-byte across all 34 pages in both sites, breathing via a CSS keyframe) was replaced
+  with `motif.js` — a `<canvas>`-drawn hypotrochoid (spirograph). Rolling-circle radius maps to
+  cursor X, pen offset maps to Y, both eased toward the target (`+= (target-current)*0.05` per
+  frame) rather than snapping; touch drag drives it the same way on mobile; freezes to one
+  default shape under `prefers-reduced-motion` instead of animating. Cost is negligible next to
+  the full-page noise/flow-field background already running — one ~1600-point stroke per frame
+  versus a full per-cell grid scan.
 
 ## Prompt Log
 
@@ -66,6 +80,17 @@ worked) are marked as such.
    mapping]"* → static brace replaced with the live-computed, color-coded connector diagram.
 8. *"Add a documentation file with the original prompt and later updates, design decisions and
    changelog"* → this file.
+9. *"I need buttons on both index pages that link to 'go to coding/working with AI' as
+   relevant"* → added a `.cross-link` pill button to each site's landing hero, pointing at the
+   other site.
+10. *"the squiggle on the bottom right of the page - its a leftover from the ink effect I wanted
+    initially - replace it with a different svg - a spirograph or other harmonic"* + *"the
+    magenta violet isnt working, can we have more violet, less magenta, go from magenta to brick
+    red?"* → recolored `--seal` to brick red across both sites; replaced the static ensō SVG
+    with a live canvas spirograph (initially static parameters).
+11. *"spirograph but can it be live - 2 of the variables plugged into mouseX and mouseY?"* →
+    made the spirograph's rolling-circle radius and pen offset track cursor/touch position via
+    `motif.js`, eased rather than snapped.
 
 ## Changelog
 
@@ -82,3 +107,12 @@ worked) are marked as such.
 - Replaced slide 16's static curly-brace graphic with a per-principle, color-coded connector
   diagram (SVG bezier curves computed from live DOM positions) mapping each principle to one or
   more of the four closing themes.
+
+### 2026-08-27
+
+- Added a `.cross-link` button to each site's landing hero pointing at the other site
+  (`working-with-ai/index.html` ↔ `coding-with-ai/index.html`).
+- Recolored `--seal` (and its hardcoded `background.js` counterpart, wash gradients, and
+  slide-16 swatch) from magenta `#C21FD6` to brick red `#B23A2E`, in both sites.
+- Replaced the static ensō SVG (identical across all 34 pages) with `motif.js`, a live canvas
+  spirograph whose rolling-circle radius and pen offset respond to cursor/touch position.
