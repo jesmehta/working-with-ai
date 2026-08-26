@@ -24,7 +24,7 @@ body{
     radial-gradient(52% 46% at 14% 8%, rgba(0,217,232,0.30), transparent 62%),
     radial-gradient(46% 42% at 88% 12%, rgba(178,58,46,0.20), transparent 60%),
     radial-gradient(60% 55% at 50% 105%, rgba(124,58,237,0.20), transparent 62%),
-    linear-gradient(160deg, #EAEEFC 0%, #E4E7FB 45%, #EFE3FA 100%);
+    linear-gradient(160deg, #EAEEFC 0%, #E4E7FB 45%, #E3DFF7 100%);
   background-attachment: fixed;
 }
 
@@ -426,7 +426,7 @@ h1{
   position:fixed;
   top:0; left:0; bottom:0;
   width: min(340px, 84vw);
-  background: linear-gradient(165deg, rgba(234,238,252,0.97), rgba(239,227,250,0.97));
+  background: linear-gradient(165deg, rgba(234,238,252,0.97), rgba(227,223,247,0.97));
   backdrop-filter: blur(14px);
   border-right:1px solid var(--hair);
   box-shadow: 8px 0 40px rgba(42,35,97,0.12);
