@@ -782,8 +782,9 @@ html.sidebar-open .sidebar{ transform: translateX(0); }
   padding: 0 9vw 2vh;
   max-width:900px;
   font-family:'Comfortaa', sans-serif;
-  font-size:.85rem;
-  color: var(--wash);
+  font-size:1.15rem;
+  font-weight:700;
+  color: var(--ink);
 }
 .footline-credit{
   position:relative; z-index:2;

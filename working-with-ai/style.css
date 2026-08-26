@@ -120,6 +120,11 @@ h1{
   max-width: 58ch;
   margin: 0 0 1.2rem;
 }
+.lede-quote{
+  font-size:1.15rem;
+  font-weight:700;
+  color: var(--ink);
+}
 
 .body-block{margin-top:.4rem;}
 .body-block p{
